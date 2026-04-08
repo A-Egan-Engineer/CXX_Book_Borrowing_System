@@ -1,8 +1,13 @@
 #include <iostream>
+#include "Headers/MainMenu.h"
 
 using namespace std;
 
 int main() {
-  cout << "Welcome to the Library App" << endl;
+
+  mainMenu();
+
+  cin.get();
+
   return 0;
 }
