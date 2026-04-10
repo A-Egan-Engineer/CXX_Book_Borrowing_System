@@ -7,7 +7,5 @@ int main() {
 
   mainMenu();
 
-  cin.get();
-
   return 0;
 }

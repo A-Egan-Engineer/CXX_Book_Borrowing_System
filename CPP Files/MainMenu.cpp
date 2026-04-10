@@ -4,8 +4,11 @@ void mainMenu() {
 
     int choice;
 
+    cout << endl;
     cout << "Welcome to the Library Main Menu" << endl;
+    cout << endl;
     cout << "Please enter your choice: " << endl;
+    cout << endl;
     cout << "1. List User Books" << endl;
     cout << "2. Return Book to Library" << endl;
     cout << "3. List Books Available in Library" << endl;
@@ -27,7 +30,7 @@ void mainMenu() {
             return mainMenu();
             case 3:
             cout << endl;
-            listLibrary();
+            library();
             cout << endl;
             return mainMenu();
             case 4:
@@ -36,9 +39,11 @@ void mainMenu() {
             cout << endl;
             return mainMenu();
             case 5:
+            cout << endl;
             cout << "Program Has Exited" << endl;
             return;
         default:
+            cout << endl;
             cout << "Please enter a valid choice." << endl;
             break;
     }

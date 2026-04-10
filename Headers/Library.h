@@ -5,6 +5,6 @@
 
 using namespace std;
 
-void listLibrary();
+void library();
 
 #endif //CXX_BOOK_BORROWING_SYSTEM_LIBRARY_H
