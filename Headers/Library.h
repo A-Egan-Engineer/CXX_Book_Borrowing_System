@@ -1,10 +1,12 @@
 #ifndef CXX_BOOK_BORROWING_SYSTEM_LIBRARY_H
 #define CXX_BOOK_BORROWING_SYSTEM_LIBRARY_H
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-void library();
+    void bookList();
+    void library();
+    bool borrowBook();
+    bool returnBook();
 
 #endif //CXX_BOOK_BORROWING_SYSTEM_LIBRARY_H

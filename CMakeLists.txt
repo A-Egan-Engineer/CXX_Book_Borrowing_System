@@ -6,11 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(CXX_Book_Borrowing_System main.cpp
         Headers/UserBooks.h
         "CPP Files/UserBooks.cpp"
-        "CPP Files/ReturnBook.cpp"
-        "Headers/ReturnBook.h"
         "CPP Files/Library.cpp"
         "Headers/Library.h"
-        "CPP Files/BorrowBook.cpp"
-        "Headers/BorrowBook.h"
         "CPP Files/MainMenu.cpp"
         "Headers/MainMenu.h")
