@@ -16,18 +16,27 @@ void mainMenu() {
 
     switch (choice) {
         case 1:
+            cout << endl;
             listUserBooks();
+            cout << endl;
             return mainMenu();
             case 2:
+            cout << endl;
             returnBook();
-            break;
+            cout << endl;
+            return mainMenu();
             case 3:
+            cout << endl;
             listLibrary();
-            break;
+            cout << endl;
+            return mainMenu();
             case 4:
+            cout << endl;
             borrowBook();
-            break;
+            cout << endl;
+            return mainMenu();
             case 5:
+            cout << "Program Has Exited" << endl;
             return;
         default:
             cout << "Please enter a valid choice." << endl;
