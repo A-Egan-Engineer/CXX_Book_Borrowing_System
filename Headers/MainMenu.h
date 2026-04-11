@@ -5,13 +5,14 @@
 
 using namespace std;
 
+// Header file to initialise main menu dependencies and methods.
 class MainMenu {
     Library& lib;
 
     public:
     void mainMenu();
     MainMenu(Library& lib) : lib(lib) {};
-    static void enterToMainMenu();
+    static void renterToMainMenu();
 };
 
 

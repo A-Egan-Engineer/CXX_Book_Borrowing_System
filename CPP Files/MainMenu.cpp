@@ -2,6 +2,7 @@
 #include "../Headers/Library.h"
 #include <iostream>
 
+// Simple main menu function that allows the user to navigate to functions of library.
     void MainMenu::mainMenu() {
 
         int choice;
@@ -24,7 +25,7 @@
             case 1:
                 cout << endl;
                 lib.listUserBooks();
-                enterToMainMenu();
+                renterToMainMenu();
                 cout << endl;
                 return mainMenu();
             case 2:
@@ -35,7 +36,7 @@
             case 3:
                 cout << endl;
                 lib.library();
-                enterToMainMenu();
+                renterToMainMenu();
                 cout << endl;
                 return mainMenu();
             case 4:
@@ -56,7 +57,8 @@
         }
     }
 
-    void MainMenu::enterToMainMenu() {
+// Method created to give user time to view library list or books they have borrowed.
+    void MainMenu::renterToMainMenu() {
         cout << endl;
         cout << "Press enter key to return to main menu...";
         cin.ignore();

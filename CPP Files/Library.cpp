@@ -4,10 +4,12 @@
 
 using namespace std;
 
+// Creates maps for library, user & iterator
     map <int, string> libraryBooks;
     map <int, string> borrowedBooks;
     map <int, string>::iterator it;
 
+// List of key-value pairs store in library books map (dynamic).
     void Library::bookList() {
         libraryBooks = {
             {1, "The One Thing - Garry W. Keller and Jay Papasan"},
@@ -23,6 +25,7 @@ using namespace std;
         };
     }
 
+// For loop that is used to iterate through the books that are stored in the library.
     void Library::library() {
 
         for (it = libraryBooks.begin(); it != libraryBooks.end(); ++it) {
@@ -30,6 +33,7 @@ using namespace std;
         }
     }
 
+// Lists books borrowed by user and erases them from library books
 bool Library::listUserBooks() {
         if (!borrowedBooks.empty()) {
             cout << "Books borrowed: " << endl;
@@ -45,6 +49,7 @@ bool Library::listUserBooks() {
         }
     }
 
+// Allows users to borrow books from the library & erases book from library to avoid duplicates
     bool Library::borrowBook() {
 
         int choice;
@@ -68,6 +73,7 @@ bool Library::listUserBooks() {
         }
     }
 
+// Completes the reverse of borrowing and returns the borrowed book into the library.
     bool Library::returnBook() {
         int choice;
         cout << "Enter book number to return..." << endl;

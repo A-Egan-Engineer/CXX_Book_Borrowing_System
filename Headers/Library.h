@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// Header file to initialise library variables and methods.
 class Library {
 
     map <int, string> libraryBooks;
