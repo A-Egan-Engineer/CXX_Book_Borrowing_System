@@ -1,13 +1,19 @@
 #ifndef CXX_BOOK_BORROWING_SYSTEM_MAINMENU_H
 #define CXX_BOOK_BORROWING_SYSTEM_MAINMENU_H
+#include "../Headers/Library.h"
 #include <iostream>
-#include "Library.h"
-#include "UserBooks.h"
 
 using namespace std;
 
-void mainMenu();
+class MainMenu {
+    Library& lib;
 
-void enterToMainMenu();
+    public:
+    void mainMenu();
+    MainMenu(Library& lib) : lib(lib) {};
+    static void enterToMainMenu();
+};
+
+
 
 #endif // CXX_BOOK_BORROWING_SYSTEM_MAINMENU_H

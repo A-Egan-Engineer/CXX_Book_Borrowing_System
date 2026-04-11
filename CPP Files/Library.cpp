@@ -8,7 +8,7 @@ using namespace std;
     map <int, string> borrowedBooks;
     map <int, string>::iterator it;
 
-    void bookList() {
+    void Library::bookList() {
         libraryBooks = {
             {1, "The One Thing - Garry W. Keller and Jay Papasan"},
             {2, "Empire of AI - Karen Hao"},
@@ -23,14 +23,29 @@ using namespace std;
         };
     }
 
-    void library() {
+    void Library::library() {
 
         for (it = libraryBooks.begin(); it != libraryBooks.end(); ++it) {
             cout << it->first << ": " << it->second << endl;
         }
     }
 
-    bool borrowBook() {
+bool Library::listUserBooks() {
+        if (!borrowedBooks.empty()) {
+            cout << "Books borrowed: " << endl;
+            for (it = borrowedBooks.begin(); it != borrowedBooks.end(); ++it) {
+                cout << it->first << ": " << it->second << endl;
+            }
+            return true;
+        }
+        else {
+            cout << endl;
+            cout << "No books borrowed..." << endl;
+            return false;
+        }
+    }
+
+    bool Library::borrowBook() {
 
         int choice;
         cout << "Enter book number to borrow..." << endl;
@@ -53,7 +68,7 @@ using namespace std;
         }
     }
 
-    bool returnBook() {
+    bool Library::returnBook() {
         int choice;
         cout << "Enter book number to return..." << endl;
         cin >> choice;

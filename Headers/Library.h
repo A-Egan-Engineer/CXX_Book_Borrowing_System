@@ -5,13 +5,18 @@
 
 using namespace std;
 
-    extern map <int, string> libraryBooks;
-    extern map <int, string> borrowedBooks;
-    extern map <int, string>::iterator it;
+class Library {
+
+    map <int, string> libraryBooks;
+    map <int, string> borrowedBooks;
+    map <int, string>::iterator it;
+
+    public:
 
     void bookList();
     void library();
     bool borrowBook();
+    bool listUserBooks();
     bool returnBook();
-
+};
 #endif //CXX_BOOK_BORROWING_SYSTEM_LIBRARY_H
