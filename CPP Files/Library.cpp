@@ -28,11 +28,6 @@ using namespace std;
         for (it = libraryBooks.begin(); it != libraryBooks.end(); ++it) {
             cout << it->first << ": " << it->second << endl;
         }
-
-        cout << endl;
-        cout << "Press enter key to return to main menu...";
-        cin.ignore();
-        cin.get();
     }
 
     bool borrowBook() {
@@ -43,10 +38,12 @@ using namespace std;
 
         it = libraryBooks.find(choice);
         if (it != libraryBooks.end()) {
-            string title = it->second;
+            int bookId = it->first;
+            string bookName = it->second;
             borrowedBooks.insert(*it);
             libraryBooks.erase(it);
-            cout << "Borrowed book: " << title << endl;
+            cout << "Borrowed book: " << bookId << ": " << bookName << endl;
+
             return true;
         }
         else {
@@ -63,10 +60,11 @@ using namespace std;
 
         it = borrowedBooks.find(choice);
         if (it != borrowedBooks.end()) {
-            string title = it->second;
+            int bookId = it->first;
+            string bookName = it->second;
             libraryBooks.insert(*it);
             borrowedBooks.erase(it);
-            cout << "Returned book: " << title << endl;
+            cout << "Returned book: " << bookId << ": " << bookName << endl;
             return true;
         }
         else {

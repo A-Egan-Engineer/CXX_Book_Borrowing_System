@@ -3,9 +3,9 @@
 
 bool listUserBooks() {
     if (!borrowedBooks.empty()) {
-        cout << "Books borrowed:" << endl;
+        cout << "Books borrowed: " << endl;
         for (it = borrowedBooks.begin(); it != borrowedBooks.end(); it++) {
-            cout << it->first << ":" << it->second << endl;
+            cout << it->first << ": " << it->second << endl;
         }
         return true;
     }

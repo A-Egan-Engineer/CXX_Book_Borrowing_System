@@ -14,6 +14,7 @@ void mainMenu() {
     cout << "3. List Books Available in Library" << endl;
     cout << "4. Borrow Book From Library" << endl;
     cout << "5. Exit" << endl;
+    cout << endl;
 
     cin >> choice;
 
@@ -21,6 +22,7 @@ void mainMenu() {
         case 1:
             cout << endl;
             listUserBooks();
+            enterToMainMenu();
             cout << endl;
             return mainMenu();
             case 2:
@@ -31,6 +33,7 @@ void mainMenu() {
             case 3:
             cout << endl;
             library();
+            enterToMainMenu();
             cout << endl;
             return mainMenu();
             case 4:
@@ -41,10 +44,19 @@ void mainMenu() {
             case 5:
             cout << endl;
             cout << "Program Has Exited" << endl;
+            cout << endl;
             return;
         default:
             cout << endl;
             cout << "Please enter a valid choice." << endl;
+            cout << endl;
             break;
     }
+}
+
+void enterToMainMenu() {
+    cout << endl;
+    cout << "Press enter key to return to main menu...";
+    cin.ignore();
+    cin.get();
 }

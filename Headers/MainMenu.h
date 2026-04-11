@@ -8,6 +8,6 @@ using namespace std;
 
 void mainMenu();
 
-void settings();
+void enterToMainMenu();
 
 #endif // CXX_BOOK_BORROWING_SYSTEM_MAINMENU_H
