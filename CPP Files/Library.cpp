@@ -61,8 +61,8 @@ using namespace std;
         cout << "Enter book number to return..." << endl;
         cin >> choice;
 
-        it = libraryBooks.find(choice);
-        if (it != libraryBooks.end()) {
+        it = borrowedBooks.find(choice);
+        if (it != borrowedBooks.end()) {
             string title = it->second;
             libraryBooks.insert(*it);
             borrowedBooks.erase(it);
