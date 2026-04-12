@@ -1,9 +1,11 @@
 # CXX_Book_Borrowing_System
- A book borrowing system that uses dynamic arrays to store books that are either in a library or on loan by a user. It allows the user to list all the books available in the library, ones they have on loan currently and allows them to borrow and return books.
+### A book borrowing system that uses dynamic arrays to store books that are either in a library or on loan by a user. It allows the user to list all the books available in the library, ones they have on loan currently and allows them to borrow and return books.
 
-Step 1: Open the Project Folder in your preferred IDE or Text Editor (With preferred compiler).
+# How To Run Program:
 
-Step 2: Ensure that the folder contains these files;
+### Step 1: Open the Project Folder in your preferred IDE or Text Editor (With preferred compiler).
+
+### Step 2: Ensure that the folder contains these files;
 
         - Library.cpp
         - MainMenu.cpp
@@ -11,20 +13,44 @@ Step 2: Ensure that the folder contains these files;
         - MainMenu.h
         - main.cpp
 
-Step 3: Run the application!
+### Step 3: Run the application!
 
-Step 4: You will be greeted with the main menu.
+### Step 4: You will be greeted with the main menu.
 
 ![MainMenu.png](Images/MainMenu.png)
 
-Step 5: Ensure you have the console window as your active window and choose and option by entering numbers 1-5!
+### Step 5: Ensure you have the console window as your active window and choose and option by entering numbers 1-5!
 
-Features:
+# Features:
 
-Feature 1: List Books Available in Library
+### Feature 1: List Books Available in Library
 
 ![img.png](Images/ListLibrary.png)
 
-Feature 2: Borrow Books from Library
+### Feature 2: Borrow Books from Library
 
 ![BorrowBook.png](Images/BorrowBook.png)
+
+### Feature 3: View Borrowed Books
+
+![BorrowedBooks.png](Images/BorrowedBooks.png)
+
+### Feature 4: Return Books to the Library
+
+![ReturnBook.png](Images/ReturnBook.png)
+
+# Final Notes:
+
+### This project was completed following a project brief provided by Torrens University Australia. It is a simple book management system designed to utilise maps and vectors and gain further understanding of how containers work and the benefit of using specific containers based on the use-case. For example, a map was used for the library system and user books. The key-value pair easily allows books to be identified by a book ID (USN/DOI) and the value stores the title and author. This increases the speed of looking up books, follows the natural standard of identifying books, allows automatic sorting and prevents duplication of stored books. A vector was used to create an iterator as it is the most memory-efficient container for iteration, with low overheads for reading.
+
+# Learning Resources:
+
+### Codecademy. (2026). Learn C++: Vectors Cheatsheet | Codecademy. Codecademy; Codecademy. https://www.codecademy.com/learn/learn-c-plus-plus/modules/learn-cpp-vectors/cheatsheet
+
+### cplusplus.com. (2026). Containers - C++ Reference. Cplusplus.com; cplusplus.com. https://cplusplus.com/reference/stl/
+
+### GeeksforGeeks. (2026, April 9). Iterators in C++ STL. GeeksforGeeks; GeeksforGeeks, Sanchhaya Education Private Limited. https://www.geeksforgeeks.org/cpp/iterators-c-stl/
+
+### Morterud, C. (2018, September 7). Dependency Injection in C++. A Dependency Injected; Cody Morterud. https://www.codymorterud.com/design/2018/09/07/dependency-injection-cpp.html
+
+### Welch, S. (2020, March 19). C++ Maps Explained. Udacity; Udacity, Inc. https://www.udacity.com/blog/2020/03/c-maps-explained.html
