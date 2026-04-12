@@ -10,7 +10,6 @@ class Library {
 
     map <int, string> libraryBooks;
     map <int, string> borrowedBooks;
-    map <int, string>::iterator it;
 
     public:
 

@@ -7,7 +7,6 @@ using namespace std;
 // Creates maps for library, user & iterator
     map <int, string> libraryBooks;
     map <int, string> borrowedBooks;
-    map <int, string>::iterator it;
 
 // List of key-value pairs store in library books map (dynamic).
     void Library::bookList() {
@@ -28,7 +27,7 @@ using namespace std;
 // For loop that is used to iterate through the books that are stored in the library.
     void Library::library() {
 
-        for (it = libraryBooks.begin(); it != libraryBooks.end(); ++it) {
+        for (auto it = libraryBooks.begin(); it != libraryBooks.end(); ++it) {
             cout << it->first << ": " << it->second << endl;
         }
     }
@@ -37,7 +36,7 @@ using namespace std;
 bool Library::listUserBooks() {
         if (!borrowedBooks.empty()) {
             cout << "Books borrowed: " << endl;
-            for (it = borrowedBooks.begin(); it != borrowedBooks.end(); ++it) {
+            for (auto it = borrowedBooks.begin(); it != borrowedBooks.end(); ++it) {
                 cout << it->first << ": " << it->second << endl;
             }
             return true;
@@ -56,7 +55,7 @@ bool Library::listUserBooks() {
         cout << "Enter book number to borrow..." << endl;
         cin >> choice;
 
-        it = libraryBooks.find(choice);
+        auto it = libraryBooks.find(choice);
         if (it != libraryBooks.end()) {
             int bookId = it->first;
             string bookName = it->second;
@@ -79,7 +78,7 @@ bool Library::listUserBooks() {
         cout << "Enter book number to return..." << endl;
         cin >> choice;
 
-        it = borrowedBooks.find(choice);
+        auto it = borrowedBooks.find(choice);
         if (it != borrowedBooks.end()) {
             int bookId = it->first;
             string bookName = it->second;
