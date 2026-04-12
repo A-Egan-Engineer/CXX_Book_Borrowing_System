@@ -19,7 +19,7 @@
 
 ![MainMenu.png](Images/MainMenu.png)
 
-### Step 5: Ensure you have the console window as your active window and choose and option by entering numbers 1-5!
+### Step 5: Ensure you have the console window as your active window and choose an option by entering numbers 1-5!
 
 # Features:
 
