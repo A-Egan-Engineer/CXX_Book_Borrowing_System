@@ -41,11 +41,9 @@
 
 # Final Notes:
 
-### This project was completed following a project brief provided by Torrens University Australia. It is a simple book management system designed to utilise maps and vectors and gain further understanding of how containers work and the benefit of using specific containers based on the use-case. For example, a map was used for the library system and user books. The key-value pair easily allows books to be identified by a book ID (USN/DOI) and the value stores the title and author. This increases the speed of looking up books, follows the natural standard of identifying books, allows automatic sorting and prevents duplication of stored books. A vector was used to create an iterator as it is the most memory-efficient container for iteration, with low overheads for reading.
+### This project was completed closely following a project brief provided by Torrens University Australia. It is a simple book management system designed to utilise maps to gain further understanding of how containers work and the benefit of using specific containers based on the use-case. For example, a map was used for the library system and user books. The key-value pair easily allows books to be identified by a book ID (USN/DOI) and the value stores the title and author. This increases the speed of looking up books, follows the natural standard of identifying books, allows automatic sorting and prevents duplication of stored books.
 
 # Learning Resources:
-
-### Codecademy. (2026). Learn C++: Vectors Cheatsheet | Codecademy. Codecademy; Codecademy. https://www.codecademy.com/learn/learn-c-plus-plus/modules/learn-cpp-vectors/cheatsheet
 
 ### cplusplus.com. (2026). Containers - C++ Reference. Cplusplus.com; cplusplus.com. https://cplusplus.com/reference/stl/
 
